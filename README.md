@@ -7,10 +7,9 @@
 | Feature             | Description                                   |
 |---------------------|-----------------------------------------------|
 | ✅ Tokenized Templates | Replace `{{Token}}` values in HTML/subject    |
-| ✅ Inline Images      | Use `<img src="logo.png">`, we embed as CID  |
+| ✅ Inline Images      | Use `<img src="logo.png">`                   |
 | ✅ Attachments        | `.AddAttachment("path.pdf")`                 |
 | ✅ AWS SES            | Sends raw email via AWS SDK                  |
-| ✅ Local + Cloud ready| Works in dev and deployed environments       |
 
 ---
 
