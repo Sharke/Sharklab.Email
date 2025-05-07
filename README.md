@@ -44,17 +44,90 @@ await email.SendAsync();
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8" />
+  <title>Welcome to SharkLab</title>
   <style>
-    body { font-family: sans-serif; }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .header {
+      background-color: #0f4c81;
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
+
+    .header img {
+      max-width: 120px;
+      margin-bottom: 10px;
+    }
+
+    .content {
+      padding: 30px;
+      color: #333;
+    }
+
+    .content h1 {
+      color: #0f4c81;
+      margin-top: 0;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #0f4c81;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+
+    .footer {
+      font-size: 12px;
+      color: #888;
+      text-align: center;
+      padding: 15px;
+      background-color: #fafafa;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello {{Name}},</h1>
-  <p>Your report for {{Buisness}} is attached.</p>
-  <img src="logo.png" alt="Logo" />
+  <div class="container">
+    <div class="header">
+      <img src="logo.png" alt="SharkLab Logo" />
+      <h2>Welcome to SharkLab</h2>
+    </div>
+    <div class="content">
+      <h1>Hello {{Name}},</h1>
+      <p>We’re thrilled to have you join us.</p>
+      <p>This is a fully tokenized HTML email with an embedded logo, customizable content, and an optional attachment — built with 💙 by SharkLab.Mail.</p>
+
+      <a href="https://sharklab.io" class="button">Explore SharkLab</a>
+
+      <p style="margin-top: 30px;">Sent on {{Date}}</p>
+    </div>
+    <div class="footer">
+      &copy; {{Year}} SharkLab. All rights reserved.
+    </div>
+  </div>
 </body>
 </html>
 ```
+
+![Example](https://i.imgur.com/kXrWOKn.png)
 
 ### 🔐 Credential Setup
 
