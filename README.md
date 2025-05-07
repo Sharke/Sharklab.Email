@@ -39,6 +39,7 @@ email.SetHtmlTemplate(
 
 email.AddAttachment("Reports/DailySalesReport.pdf");
 await email.SendAsync();
+```
 
 ```html
 <!DOCTYPE html>
@@ -54,6 +55,7 @@ await email.SendAsync();
   <img src="Assets/logo.png" alt="Logo" />
 </body>
 </html>
+```
 
 ### 🔐 Credential Setup
 
