@@ -1,6 +1,6 @@
-# 🦈 SharkLab.Mail
+# 🦈 SharkLab.Email
 
-**SharkLab.Mail** is a simple wrapper for sending beautiful, tokenized HTML emails via Amazon SES
+**SharkLab.Email** is a simple wrapper for sending beautiful, tokenized HTML emails via Amazon SES
 
 ## ✨ Features
 
