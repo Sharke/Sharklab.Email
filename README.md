@@ -58,9 +58,9 @@ await email.SendAsync();
 
 ### 🔐 Credential Setup
 
-Sharklab.Email uses the standard **AWS SDK credential chain**, so you don’t need to hardcode secrets. The SDK will automatically use credentials from the first source it finds, in this order:
+Sharklab.Email uses the standard **AWS SDK credential chain**. The SDK will automatically use credentials from the first source it finds, in this order:
 
-1. **Environment Variables** (best for CI/CD)
+1. **Environment Variables**
 
    ```bash
    AWS_ACCESS_KEY_ID=your_key
