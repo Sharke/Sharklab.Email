@@ -51,7 +51,7 @@ await email.SendAsync();
 <body>
   <h1>Hello {{Name}},</h1>
   <p>Your report for {{Buisness}} is attached.</p>
-  <img src="Assets/logo.png" alt="Logo" />
+  <img src="logo.png" alt="Logo" />
 </body>
 </html>
 ```
