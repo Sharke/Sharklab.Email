@@ -18,25 +18,25 @@
 ```csharp
 var tokens = new Dictionary<string, string>
 {
-    { "Name", "John" },
-    { "Buisness", "Acme Inc" },
+    { "Name", "John Doe" },
+    { "Year", DateTime.Now.Year.ToString() },
     { "Date", DateTime.UtcNow.ToString("MMMM dd, yyyy") }
 };
 
 var email = new SesEmail(
     from: "hello@sharklab.io",
-    to: "client@example.com",
-    subjectTemplate: "📊 Daily Report for {{Name}} - {{Date}}",
+    to: "example@email.org",
+    subjectTemplate: "SharkLab.Mail Example - {{Date}}",
     tokens: tokens
 );
 
 email.SetHtmlTemplate(
-    filePath: "Templates/daily-report.html",
-    assetPath: "Templates/Assets",
+    filePath: "templates/example.html",
+    assetPath: "assets",
     tokens: tokens
 );
 
-email.AddAttachment("Reports/DailySalesReport.pdf");
+email.AddAttachment(@"dummy.pdf");
 await email.SendAsync();
 ```
 
