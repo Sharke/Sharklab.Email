@@ -1,0 +1,76 @@
+## Build output
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.log
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Rider / VS Code
+.idea/
+.vscode/
+*.code-workspace
+
+## Resharper
+_ReSharper*/
+*.DotSettings.user
+
+## NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+
+## DotCover
+*.dotCover
+
+## VS Mac
+.vscode/
+.vs/
+
+## Test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*.testsettings
+*.vsmdi
+*.psess
+
+## Reports
+coverage/
+report.html
+
+## StyleCop
+StyleCopReport.xml
+
+## local config
+appsettings.Development.json
+secrets.json
+
+## Publish artifacts
+publish/
+*.Publish.xml
+
+## Logs
+*.log
+
+## Temporary
+*.tmp
+*.temp
+*.bak
+*.swp
+
+## Others
+*.DS_Store
+Thumbs.db
+
+# Optional: ignore your local NuGet feed
+# /LocalNuGet/
